@@ -11,10 +11,13 @@
     "dev": "bun run --filter '*' dev",
     "dev:web": "bun run --filter elite-prints-frontend dev",
     "dev:api": "bun run --filter elite-prints-backend dev",
-    "build": "bun run --filter '*' build"
+    "build": "bun run --filter '*' build",
+    "release:back": "bun run --filter elite-prints-backend -- standard-version --tag-prefix backend-v && git push --follow-tags origin main",
+    "release:front": "bun run --filter elite-prints-frontend -- standard-version --tag-prefix frontend-v && git push --follow-tags origin main"
   },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "standard-version": "^9.5.0"
   },
   "peerDependencies": {
     "typescript": "5"
