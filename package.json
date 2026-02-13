@@ -1,0 +1,22 @@
+{
+  "name": "eliteprints-saas",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "bun run --filter '*' dev",
+    "dev:web": "bun run --filter elite-prints-frontend dev",
+    "dev:api": "bun run --filter elite-prints-backend dev",
+    "build": "bun run --filter '*' build"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "5"
+  }
+}
