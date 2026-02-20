@@ -8,18 +8,20 @@
     "packages/*"
   ],
   "scripts": {
-    "dev": "bun run --filter '*' dev",
+    "dev": "bun run ./scripts/index.ts",
     "dev:web": "bun run --filter elite-prints-frontend dev",
     "dev:api": "bun run --filter elite-prints-backend dev",
     "build": "bun run --filter '*' build",
-    "release:back": "bun run --filter elite-prints-backend -- standard-version --tag-prefix backend-v && git push --follow-tags origin main",
-    "release:front": "bun run --filter elite-prints-frontend -- standard-version --tag-prefix frontend-v && git push --follow-tags origin main"
+    "release": "commit-and-tag-version && git push --follow-tags origin main"
   },
   "devDependencies": {
     "@types/bun": "latest",
-    "standard-version": "^9.5.0"
+    "commit-and-tag-version": "^12.6.1"
   },
   "peerDependencies": {
     "typescript": "5"
+  },
+  "dependencies": {
+    "concurrently": "^9.2.1"
   }
 }

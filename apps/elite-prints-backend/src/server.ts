@@ -1,16 +1,19 @@
 import { Elysia } from "elysia";
-import { authRoutes } from "./routes";
+import { createClient } from "@supabase/supabase-js";
+import { desingRoutes } from "./controllers";
 
-const initServer = () => {
-    const app = new Elysia()
-        .get("/", () => "Hello Elysia")
-        .use(authRoutes)
-        .listen(process.env.PORT ?? '3000');
+const supabase = createClient(process.env.SUPABASE_URL!, process.env.SUPABASE_PUBLISHABLE_KEY!);
 
-    console.log(
-      `🦊 Elysia is running at ${app.server?.hostname}:${app.server?.port}`
-    );
-}
+export const app = new Elysia()
+    .get('/', async () => {
+        const { data, error } = await supabase
+            .from('designs')
+            .select('*')
+            .eq('is_premium', true);
 
-export default initServer;
+        if (error) throw error;
+        return data;
+    })
+    // .use(desingRoutes);
 
+export type App = typeof app;
