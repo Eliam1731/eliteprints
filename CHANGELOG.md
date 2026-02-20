@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.1.2](https://github.com/Eliam1731/eliteprints/compare/v0.1.1...v0.1.2) (2026-02-20)
+
+
+### Bug Fixes
+
+* provide .env.template ([ed9ae54](https://github.com/Eliam1731/eliteprints/commit/ed9ae546153f41dda76e73c70814a31b35071991))
+
 ## [0.1.1](https://github.com/Eliam1731/eliteprints/compare/v0.1.0...v0.1.1) (2026-02-20)
 
 
