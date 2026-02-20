@@ -9,11 +9,12 @@
     "packages/*"
   ],
   "scripts": {
-    "dev": "bun run ./scripts/index.ts",
+    "dev": "bun run ./scripts/index.ts dev",
     "dev:web": "bun run --filter elite-prints-frontend dev",
     "dev:api": "bun run --filter elite-prints-backend dev",
     "build": "bun run --filter '*' build",
-    "release": "commit-and-tag-version && git push --follow-tags origin main"
+    "release": "commit-and-tag-version && git push --follow-tags origin main",
+    "release-major": "bun run release -- --release-as major"
   },
   "devDependencies": {
     "@types/bun": "latest",

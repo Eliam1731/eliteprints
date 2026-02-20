@@ -33,13 +33,3 @@ concurrently(
         prefixColor: colors[index % colors.length]
     }))
 ).result.catch(() => {})
-
-
-// import { $ } from 'bun';
-
-// console.log(`Arrancando el monorepo de Elite prints`)
-
-// Promise.all([
-//     $`bun run dev:web`,
-//     $`bun run dev:api`,
-// ]);
