@@ -10,6 +10,15 @@
 ## Considerations
 This will be a monorepo, which means, running any command in `/package.json` will run nested `package.json` commands from apps/*
 
+# Requirements
+## Proto
+
+- Proto should be installed `https://moonrepo.dev/proto`
+- Run `proto install`
+- Run `bun install`
+- Run `bun dev`
+
+
 ### Git
 Use this commands to push only in __main__
 ```
