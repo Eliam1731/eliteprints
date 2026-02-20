@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.1.3](https://github.com/Eliam1731/eliteprints/compare/v0.1.2...v0.1.3) (2026-02-20)
+
+
+### Bug Fixes
+
+* changing README.md ([980bd90](https://github.com/Eliam1731/eliteprints/commit/980bd90bc686dfb6a91b3e4fc0d4ac8c342acb17))
+
 ## [0.1.2](https://github.com/Eliam1731/eliteprints/compare/v0.1.1...v0.1.2) (2026-02-20)
 
 
