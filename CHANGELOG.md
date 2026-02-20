@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.1.1](https://github.com/Eliam1731/eliteprints/compare/v0.1.0...v0.1.1) (2026-02-20)
+
+
+### Bug Fixes
+
+* package.json fixing error array should be provided ([363c179](https://github.com/Eliam1731/eliteprints/commit/363c179420c87739d267e8222ba838f16fd4ecf9))
+
 ## 0.1.0 (2026-02-20)
 
 
